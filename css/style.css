@@ -6,3 +6,77 @@
     /* Testing Mode  */
     border: 1px dashed orange;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER  */
+header{
+    min-height: 240px;
+    text-align: center;
+
+    color: white;
+
+    background-color: rgb(55, 70, 211);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 2em;/*  FLEX? */
+}
+
+header > span{
+    width: 50%;
+}
+
+/* MAIN  */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 3em;
+}
+
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 5em;
+}
+.feature img{
+    flex: 1 0 50%;
+
+    background-color: rgb(255, 255, 4);
+}
+.feature section{
+    flex: 0 1 50%;
+}
+
+/* FOOTER  */
+footer{
+    background-color: darkgray;
+
+    padding: 10px 5%;
+}
+
+/* Site Map  */
+footer > div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+.map-section{
+
+}
+.map-section:first-child{
+    flex: 0 1 25%;
+}
+
+/* Credits */
+footer > div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
