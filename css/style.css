@@ -24,11 +24,15 @@ header{
 header nav{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
-    margin-bottom: 2em;/*  FLEX? */
+    height: 2em;
+
+    margin-bottom: em;/*  FLEX? */
 }
 
-header > span{
+header > p{
+    margin: auto;
     width: 50%;
 }
 
@@ -43,23 +47,27 @@ main{
 
 .feature{
     display: flex;
-    flex-wrap: wrap;
 
     margin-bottom: 5em;
 }
 .feature img{
     flex: 1 0 50%;
 
-    background-color: rgb(255, 255, 4);
+    /* DEBUG  */
+    min-height: 100px;
+    background-color: rgb(18, 19, 26);
 }
 .feature section{
     flex: 0 1 50%;
+
+    padding: 1.5em;
 }
 
 /* FOOTER  */
 footer{
-    background-color: darkgray;
+    background-color: rgb(18, 19, 26);
 
+    color: white;
     padding: 10px 5%;
 }
 
