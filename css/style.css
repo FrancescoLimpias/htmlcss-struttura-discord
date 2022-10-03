@@ -72,22 +72,26 @@ main{
     display: flex;
     justify-content: center;
     
-    padding: 3em 0px;
+    padding: 3em 15%;
     width: 100%;
 }
 .feature.reverse{
     flex-direction: row-reverse;
     background-color: rgb(235, 236, 236);
 }
+.feature.column{
+    flex-direction: column-reverse;
+    text-align: center;
+}
 .feature img{
-    flex: 0 0 40%;
+    flex: 0 0 50%;
 
     /* DEBUG  */
     min-height: 100px;
     background-color: rgb(18, 19, 26);
 }
 .feature section{
-    flex: 0 0 40%;
+    flex: 0 0 50%;
 
     padding: 1.5em;
 }
