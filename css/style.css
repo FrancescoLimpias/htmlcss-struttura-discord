@@ -11,6 +11,12 @@ a{
     text-decoration: none;
 }
 
+/* COMMON  */
+.button{
+    padding: 0.2em 0.5em;
+    border-radius: 28px;
+}
+
 /* HEADER  */
 header{
     height: 626px;
@@ -35,7 +41,7 @@ header nav{
     /* margin-bottom: em; FLEX? */
 }
 
-header > div{
+#firstLook{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,9 +50,12 @@ header > div{
     height: calc(100% - 2em);
     font-size: x-large;
 }
-
-header p{
+#firstLook p{
     width: 50%;
+}
+#firstLook div{
+    height: 2em;
+    line-height: 2em;
 }
 
 /* MAIN  */
@@ -55,6 +64,7 @@ main{
     flex-direction: column;
     align-items: center;
 
+    font-size: large;
     margin-bottom: 3em;
 }
 
@@ -64,7 +74,6 @@ main{
     
     padding: 3em 0px;
     width: 100%;
-    font-size: large;
 }
 .feature.reverse{
     flex-direction: row-reverse;
@@ -87,20 +96,28 @@ main{
 footer{
     background-color: rgb(18, 19, 26);
 
+    font-size: x-large;
     color: white;
-    padding: 10px 5%;
+    padding: 70px 5%;
 }
 
 /* Site Map  */
 footer > div:first-child{
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 1.5em;
 }
 .map-section{
 
 }
 .map-section:first-child{
-    flex: 0 1 25%;
+    flex: 0 1 20%;
+}
+.map-section ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Credits */
